@@ -1,0 +1,133 @@
+{
+  "boundary_burst": [
+    {
+      "algorithm": "fixed window",
+      "accepted_of_200": 200,
+      "max_in_any_60s": 200
+    },
+    {
+      "algorithm": "sliding log",
+      "accepted_of_200": 100,
+      "max_in_any_60s": 100
+    },
+    {
+      "algorithm": "sliding window counter",
+      "accepted_of_200": 100,
+      "max_in_any_60s": 100
+    },
+    {
+      "algorithm": "token bucket",
+      "accepted_of_200": 100,
+      "max_in_any_60s": 100
+    },
+    {
+      "algorithm": "GCRA",
+      "accepted_of_200": 100,
+      "max_in_any_60s": 100
+    }
+  ],
+  "adversarial": [
+    {
+      "algorithm": "fixed window",
+      "offered": 96197,
+      "accepted": 12001,
+      "utilisation_%": 100.0,
+      "max_in_any_60s": 197,
+      "worst_overshoot_%": 97.0
+    },
+    {
+      "algorithm": "sliding log",
+      "offered": 96197,
+      "accepted": 11951,
+      "utilisation_%": 99.6,
+      "max_in_any_60s": 100,
+      "worst_overshoot_%": 0.0
+    },
+    {
+      "algorithm": "sliding window counter",
+      "offered": 96197,
+      "accepted": 11876,
+      "utilisation_%": 99.0,
+      "max_in_any_60s": 102,
+      "worst_overshoot_%": 2.0
+    },
+    {
+      "algorithm": "token bucket",
+      "offered": 96197,
+      "accepted": 12099,
+      "utilisation_%": 100.8,
+      "max_in_any_60s": 199,
+      "worst_overshoot_%": 99.0
+    },
+    {
+      "algorithm": "GCRA",
+      "offered": 96197,
+      "accepted": 12099,
+      "utilisation_%": 100.8,
+      "max_in_any_60s": 199,
+      "worst_overshoot_%": 99.0
+    }
+  ],
+  "memory": [
+    {
+      "algorithm": "fixed window",
+      "bytes_per_key": 122
+    },
+    {
+      "algorithm": "sliding log",
+      "bytes_per_key": 4281
+    },
+    {
+      "algorithm": "sliding window counter",
+      "bytes_per_key": 129
+    },
+    {
+      "algorithm": "token bucket",
+      "bytes_per_key": 112
+    },
+    {
+      "algorithm": "GCRA",
+      "bytes_per_key": 88
+    }
+  ],
+  "speed": [
+    {
+      "algorithm": "fixed window",
+      "decisions_per_s": 2851635
+    },
+    {
+      "algorithm": "sliding log",
+      "decisions_per_s": 1860618
+    },
+    {
+      "algorithm": "sliding window counter",
+      "decisions_per_s": 1699852
+    },
+    {
+      "algorithm": "token bucket",
+      "decisions_per_s": 2028888
+    },
+    {
+      "algorithm": "GCRA",
+      "decisions_per_s": 3211061
+    }
+  ],
+  "http": [
+    {
+      "algorithm": "sliding log",
+      "requests": 4000,
+      "http_200": 1600,
+      "http_429": 2400,
+      "expected_200": 1600,
+      "requests_per_s": 32102
+    },
+    {
+      "algorithm": "GCRA",
+      "requests": 4000,
+      "http_200": 1600,
+      "http_429": 2400,
+      "expected_200": 1600,
+      "requests_per_s": 30712
+    }
+  ]
+}
